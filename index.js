@@ -29,7 +29,7 @@ function render(links) {
 
 tabBtn.addEventListener("click", function () {
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-    myLinks.push(tabs[0s].url);
+    myLinks.push(tabs[0].url);
     localStorage.setItem("myLinks", JSON.stringify(myLinks));
     render(myLinks);
   });
