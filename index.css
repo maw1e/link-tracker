@@ -5,8 +5,16 @@ body {
   min-width: 400px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+#delete-btn {
+  background-color: maroon;
+}
+
 input {
-  width: 100%;
+  width: 400px;
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid #5f9341;
@@ -19,6 +27,9 @@ button {
   padding: 10px 20px;
   border: none;
   font-weight: bold;
+  cursor: pointer;
+  width: 150px;
+  margin-top: 10px;
 }
 
 ul {
